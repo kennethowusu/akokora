@@ -29,7 +29,25 @@ module.exports = function(grunt){
       dest: 'css/style.css'
     }
   },
+  // Concat fiiles
+ concat: {
+   options: {
+     // separator: ';',
+   },
+   dist: {
+     src: ['build/coffee/script.coffee', 'build/coffee/some.coffee', 'build/coffee/another.coffee'],
+     dest: 'build/coffee/main.coffee',
+   },
+ },
 
+  //process coffeescript to js
+  coffee:{
+    compile:{
+      files:{
+        'javascripts/main.js':'build/coffee/main.coffee'
+      }
+    }
+  },
   //watch tasks
   watch: {
     options:{
@@ -38,6 +56,10 @@ module.exports = function(grunt){
     scss: {
       files: ['build/sass/**/*'],
       tasks: ['sass','autoprefixer']
+    },
+    coffee:{
+      files:['build/coffee/**/*'],
+      tasks:['concat','coffee']
     }
 
   }
@@ -46,6 +68,8 @@ module.exports = function(grunt){
 grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-autoprefixer');
 grunt.loadNpmTasks('grunt-contrib-watch');
+grunt.loadNpmTasks('grunt-contrib-coffee');
+grunt.loadNpmTasks('grunt-contrib-concat');
 
 grunt.registerTask('default', ['watch']);
 grunt.registerTask('call_sass', 'sass');

@@ -1,0 +1,23 @@
+/*inclues but not limited to the following
+ *Clearfix
+ *colors
+ *display
+ *embed
+ *flex
+ *float
+ *position
+ *shadows
+ *sizing
+ *spacing
+*text transform
+*vertical align
+*visibility
+*/
+.box-shadow {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  box-shadow: 3px 3px 2px  red;
+  border-color: coral;
+  boder: blue;
+}
