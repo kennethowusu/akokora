@@ -21,3 +21,15 @@
   border-color: coral;
   boder: blue;
 }
+
+.shadow {
+  background-color: aliceblue;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 3px 6px #000;
+  border-radius: 50%;
+  background-color: yellow;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+}
