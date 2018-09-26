@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.48 16.805">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4ab9ce;
+      }
+    </style>
+  </defs>
+  <path id="hamburger" class="cls-1" d="M11,970.362v2.626H31.481v-2.626Zm0,7.089v2.626H31.481v-2.626Zm0,7.089v2.626H31.481v-2.626Z" transform="translate(-11 -970.362)"/>
+</svg>

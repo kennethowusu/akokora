@@ -1,0 +1,69 @@
+
+.header{
+  display:flex;
+  justify-content: between;
+  border-bottom:1px solid $gallery;
+  align-items:center;
+  position:relative;
+  padding:20px;
+}
+
+
+//=====================header icons =========================== //
+
+.logo{
+  margin-right:auto;
+}
+
+.logo-img{
+  width:50px;
+  height:50px;
+}
+
+.search-img{
+  width:22px;
+  height:23.17px;
+}
+.hamburger-img{
+  width:22px;
+  height:18px;
+}
+
+.search,.hambuger{
+  border-left:1px solid $gallery;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+//=====================menu and menu items ===================//
+.main-menu{
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:91px;
+  left:0;
+  width:100%;
+  // display:none;
+
+  & .menu-item{
+    list-style-type:none;
+    font-weight:bold;
+    padding:15px 20px;
+    border-bottom:1px solid $gallery;
+
+  }
+}
+
+.menu-item{
+  & a{
+    color:#000;
+    display:block;
+    transition: .3s ease-in-out;
+
+     &:hover{
+       color : $texas-rose;
+       text-decoration:none;
+     }
+
+  }
+}
