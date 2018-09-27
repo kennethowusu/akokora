@@ -6,7 +6,7 @@
   flex-wrap:wrap;
 
   @media(min-width:600px){
-    justify-content: space-around;
+   justify-content: flex-start;
   }
 }
 .post{
@@ -25,13 +25,14 @@
   }
 
   @media(min-width:900px){
-    justify-content: space-around;
     flex:1 33.33%;
   }
 }
 .post-img-cont{
-  min-height:107px;
-  max-height:107px;
+  @media(min-width:$banner-breakpoint){
+    min-height:107px;
+    max-height:107px;
+  }
 }
 .post-img{
   width:100%;
@@ -54,6 +55,8 @@
   & a{
     color:#fff;
     letter-spacing:2px;
+
+
   }
 }
 .post-link{

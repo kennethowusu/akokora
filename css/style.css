@@ -321,6 +321,10 @@ input:focus, button:focus {
   outline: 0;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 body {
   font-family: lato;
 }
@@ -445,7 +449,7 @@ body {
 
 .search-div {
   height: 91px;
-  z-index: 10;
+  z-index: 30;
   width: 100%;
   position: absolute;
   top: 0;
@@ -503,8 +507,9 @@ body {
 }
 @media (min-width: 600px) {
   .posts {
-    -webkit-justify-content: space-around;
-            justify-content: space-around;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -527,17 +532,17 @@ body {
 }
 @media (min-width: 900px) {
   .post {
-    -webkit-justify-content: space-around;
-            justify-content: space-around;
     -webkit-flex: 1 33.33%;
        -moz-box-flex: 1;
             flex: 1 33.33%;
   }
 }
 
-.post-img-cont {
-  min-height: 107px;
-  max-height: 107px;
+@media (min-width: 750px) {
+  .post-img-cont {
+    min-height: 107px;
+    max-height: 107px;
+  }
 }
 
 .post-img {
@@ -571,12 +576,69 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 750px) {
+  .banner {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+  }
+}
+
+.banner-img-cont {
+  max-height: 540px;
+}
+@media (min-width: 750px) {
+  .banner-img-cont {
+    max-width: 500px;
+  }
+}
+@media (min-width: 854px) {
+  .banner-img-cont {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-img-cont {
+    width: 800px;
+    height: 700px;
+    margin-right: auto;
+  }
+}
+
 .banner-img {
   width: 100%;
+}
+@media (min-width: 750px) {
+  .banner-img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-img {
+    width: 800px;
+    max-width: 800px;
+    max-height: 100%;
+  }
 }
 
 .banner-detail-cont {
   padding: 15px;
+}
+@media (min-width: 750px) {
+  .banner-detail-cont {
+    -webkit-align-self: center;
+            align-self: center;
+  }
+}
+@media (min-width: 854px) {
+  .banner-detail-cont {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-detail-cont {
+    max-width: 400px;
+  }
 }
 
 .banner-cat {
@@ -591,7 +653,22 @@ body {
 .banner-title {
   text-transform: capitalize;
 }
+@media (min-width: 1200px) {
+  .banner-title {
+    font-size: 1.8rem;
+  }
+}
 
 .post-container {
   padding: 20px 15px;
+}
+@media (min-width: 1100px) {
+  .post-container {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .post-container {
+    padding: 0 100px;
+  }
 }
