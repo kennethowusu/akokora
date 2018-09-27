@@ -42,7 +42,9 @@
   position:absolute;
   top:91px;
   left:0;
+  transform:translate(-100%);
   width:100%;
+  transition:.3s ease-in-out;
   // display:none;
 
   & .menu-item{
@@ -50,7 +52,6 @@
     font-weight:bold;
     padding:15px 20px;
     border-bottom:1px solid $gallery;
-
   }
 }
 
@@ -66,4 +67,36 @@
      }
 
   }
+}
+//===============search form ================//
+.search-div{
+  height: 91px;
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom:1px solid $gallery;
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+.search-form__textbox{
+  padding: 5px 10px;
+  color: #b1a1a1;
+  border:0;
+}
+
+.right-arrow-img{
+  width:20px;
+  height:16px;
+}
+.search-close-img{
+  width:14px;
+  height:14px;
+}
+
+.showsearch{
+  display:flex;
 }

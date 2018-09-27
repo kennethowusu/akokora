@@ -65,6 +65,9 @@
 .mr-5{
   margin-right:5px;
 }
+.mr-10{
+  margin-right:10px;
+}
 .mt-15{
   margin-top:15px;
 }
@@ -79,6 +82,9 @@
 }
 
 //margin left
+.ml-10{
+  margin-left:10px;
+}
 .ml-15{
   margin-left:15px;
 }
@@ -261,4 +267,9 @@
 //width
 .w-100{
   width:100%
+}
+
+.no-btn{
+  background-color:transparent;
+  border:none;
 }

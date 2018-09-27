@@ -30,15 +30,15 @@ module.exports = function(grunt){
     }
   },
   // Concat fiiles
- concat: {
-   options: {
-     // separator: ';',
-   },
-   dist: {
-     src: ['javascripts/*'],
-     dest: 'javascripts/main.js',
-   },
- },
+ // concat: {
+ //   options: {
+ //     // separator: ';',
+ //   },
+ //   dist: {
+ //     src: ['javascripts/*'],
+ //     dest: 'javascripts/main.js',
+ //   },
+ // },
 
   // //process coffeescript to js
   // coffee:{
@@ -56,11 +56,12 @@ module.exports = function(grunt){
     scss: {
       files: ['build/sass/**/*'],
       tasks: ['sass','autoprefixer']
-    },
-    javascript:{
-      files:['javascripts/**/*'],
-      tasks:['concat']
     }
+    // },
+    // javascript:{
+    //   files:['javascripts/**/*'],
+    //   tasks:['concat']
+    // }
 
   }
 });
