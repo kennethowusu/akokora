@@ -1,0 +1,29 @@
+//========HOME BANNER ================//
+.banner{
+
+
+}
+.banner-img{
+  width:100%;
+}
+.banner-detail-cont{
+  padding:15px;
+}
+.banner-cat{
+  color:#000;
+  text-transform:capitalize;
+  &:hover{
+    text-decoration: none;
+    color:#000;
+  }
+}
+.banner-title{
+  text-transform:capitalize;
+}
+
+//==============POST CONTAINER=============//
+.post-container{
+  padding:20px 15px;
+
+
+}

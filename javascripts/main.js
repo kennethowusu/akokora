@@ -12,6 +12,7 @@ $('.search-close-img').on('click',()=>{
   $('.search-div').slideUp(300);
 })
 
+
 const toggleMainMenu = () =>{
   if($('.hamburger-img').attr('src') == '/images/svg/hamburger.svg'){
     $('.hamburger-img').attr('src','/images/svg/close.svg');

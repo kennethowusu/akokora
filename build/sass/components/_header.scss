@@ -27,12 +27,17 @@
 .hamburger-img{
   width:22px;
   height:18px;
+
+  @media(min-width:$mobile-menu-breakpoint){
+    display:none;
+  }
 }
 
 .search,.hambuger{
   border-left:1px solid $gallery;
   padding-left:20px;
   padding-right:20px;
+
 }
 
 //=====================menu and menu items ===================//
@@ -40,6 +45,9 @@
   margin:0;
   padding:0;
   position:absolute;
+  text-transform:uppercase;
+  background-color:#fff;
+  z-index: 20;
   top:91px;
   left:0;
   transform:translate(-100%);
@@ -52,6 +60,20 @@
     font-weight:bold;
     padding:15px 20px;
     border-bottom:1px solid $gallery;
+
+    @media(min-width:$mobile-menu-breakpoint){
+      border-bottom:none;
+    }
+  }
+
+
+  @media(min-width:$mobile-menu-breakpoint){
+    transition: 0s;
+    display:flex;
+    transform:translate(0);
+    position:static;
+    width:auto;
+
   }
 }
 
@@ -81,6 +103,10 @@
   display:none;
   justify-content:center;
   align-items:center;
+
+  @media(min-width:$mobile-menu-breakpoint){
+    border-bottom:none;
+  }
 }
 .search-form__textbox{
   padding: 5px 10px;
