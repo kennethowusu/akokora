@@ -584,6 +584,10 @@ body {
 
 .footer {
   background-color: #EEE;
+  height: 80px;
+}
+.footer p {
+  margin: 0;
 }
 
 @media (min-width: 750px) {
@@ -665,7 +669,7 @@ body {
 }
 @media (min-width: 1200px) {
   .banner-title {
-    font-size: 1.8rem;
+    font-size: 3.0rem;
   }
 }
 
@@ -689,5 +693,6 @@ body {
   font-weight: 900;
   border: 1px solid #bbaeaeee;
   padding: 20px;
-  border-radius: 75px;
+  width: 100%;
+  box-shadow: 0 0 6px #b7b7b7;
 }

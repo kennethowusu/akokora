@@ -62,7 +62,7 @@
 .banner-title{
   text-transform:capitalize;
   @media(min-width:1200px){
-    font-size:1.8rem;
+    font-size:3.0rem;
   }
 }
 
@@ -83,8 +83,9 @@
 .load-more-btn{
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight:900;
+  font-weight: 900;
   border: 1px solid #bbaeaeee;
   padding: 20px;
-  border-radius: 75px;
+  width: 100%;
+  box-shadow: 0 0 6px #b7b7b7;
 }
