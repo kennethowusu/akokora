@@ -65,6 +65,8 @@
     &::after{
       content:close-quote;
     }
+
+
   }
   //==========643 min-width ======
   @media(min-width:643px){
@@ -79,6 +81,7 @@
       float:right;
       width:300px;
       margin-left:30px;
+      font-size : 1.8rem;
     }
 
   }

@@ -590,6 +590,100 @@ body {
   margin: 0;
 }
 
+.article-head {
+  margin-top: 40px;
+}
+
+.related-articles {
+  border-top: 1px solid #e2d9d9;
+  padding-top: 30px;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+}
+@media (min-width: 540px) {
+  .related-articles {
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+            flex-direction: row;
+  }
+}
+@media (min-width: 670px) {
+  .related-articles {
+    max-width: 660px;
+  }
+}
+
+.related-articles__post-cont {
+  margin-bottom: 20px;
+}
+@media (min-width: 540px) {
+  .related-articles__post-cont {
+    -webkit-flex: 1 50%;
+       -moz-box-flex: 1;
+            flex: 1 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 670px) {
+  .related-articles__post-cont {
+    -webkit-flex: 1 33.3333%;
+       -moz-box-flex: 1;
+            flex: 1 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+.related-articles_post {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+}
+@media (min-width: 540px) {
+  .related-articles_post {
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+            flex-direction: column;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.related-articles_post .related-articles_img {
+  max-width: 103px;
+  max-height: 80px;
+}
+@media (min-width: 540px) {
+  .related-articles_post .related-articles_img {
+    max-width: 180px;
+    max-height: 100px;
+  }
+}
+.related-articles_post .related-articles__post-link {
+  font-weight: bold;
+  padding: 0 20px;
+  color: #2b2b2b;
+}
+@media (min-width: 540px) {
+  .related-articles_post .related-articles__post-link {
+    padding: 15px 0 0 0;
+    width: 180px;
+  }
+}
+.related-articles_post .related-articles__post-link:hover {
+  color: #2b2b2b;
+  text-decoration: underline;
+  -moz-text-decoration-color: #FFAA58;
+       text-decoration-color: #FFAA58;
+}
+
 @media (min-width: 750px) {
   .banner {
     display: -webkit-flex;
@@ -772,6 +866,7 @@ body {
     float: right;
     width: 300px;
     margin-left: 30px;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 800px) {
