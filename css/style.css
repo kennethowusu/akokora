@@ -703,17 +703,44 @@ body {
 .post-resource .post-resource__category {
   margin: 0;
 }
+@media (min-width: 740px) {
+  .post-resource {
+    width: 700px;
+    margin: auto;
+  }
+}
+
+.post-resource .post-resource__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 684px) {
+  .post-resource .post-resource__title {
+    font-size: 51px;
+  }
+}
+@media (min-width: 529px) {
+  .post-resource .post-resource__title {
+    font-size: 37px;
+    margin-bottom: 27px;
+  }
+}
+@media (min-width: 622px) {
+  .post-resource .post-resource__title {
+    font-size: 46px;
+  }
+}
 
 .post-resource__image-cont {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 30px;
 }
 .post-resource__image-cont .post-resource__image {
-  max-width: 100%;
+  width: 100%;
 }
 
 .post-resource-body {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .post-resource-body p, .post-resource-body ul, .post-resource-body li {
   color: #616161;
@@ -725,14 +752,35 @@ body {
   color: #FFAA58;
   border-bottom: 1px dashed #FFAA58;
 }
-.post-resource-body blockquote {
+.post-resource-body blockquote.pullquote {
   font-size: 1.5rem;
 }
-.post-resource-body blockquote::before {
+.post-resource-body blockquote.pullquote::before {
   content: open-quote;
 }
-.post-resource-body blockquote::after {
+.post-resource-body blockquote.pullquote::after {
   content: close-quote;
+}
+@media (min-width: 643px) {
+  .post-resource-body p {
+    margin-bottom: 22.4px;
+  }
+  .post-resource-body p, .post-resource-body ul, .post-resource-body li {
+    font-size: 1.1rem;
+  }
+  .post-resource-body blockquote.pullquote {
+    float: right;
+    width: 300px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 800px) {
+  .post-resource-body p {
+    margin-bottom: 28px;
+  }
+  .post-resource-body p, .post-resource-body ul, .post-resource-body li {
+    font-size: 1.1rem;
+  }
 }
 
 .back-to-top {
